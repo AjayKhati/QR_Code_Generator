@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div class="container">
+        <section id="first">
+            <h1>QR Code</h1>
+            <p>Generator</p>
+            <p id="tagline">
+                Unlock the world with pixelated portal, <br> QR Codes: Connect, share and explore it all!
+            </p>
+        </section>
+
+        <section id="second">
+            <form action="#">
+                <div class="input-container">
+                    <input type="text" name="text" id="text" placeholder="Enter Text or URL Here" autocomplete="off">
+                    <button id="generate">Generate</button>
+                </div>
+            </form>
+
+            <div id="qrcode-div">
+                <img class="qrcode" id="generated-qrcode">
+                <button id="save-image" class="save-button" style="display:none;">Save Image</button>
+            </div>
+        </section>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
